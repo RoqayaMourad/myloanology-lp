@@ -13,8 +13,8 @@ Table Of Contents:
 04. Header
 05. Form Lightbox
 06. Approval
-07. Loan Options
-08. Loan Options Lightboxes
+07. Loan why-us
+08. Loan why-us Lightboxes
 09. Amount Based
 10. Description 1
 11. Description 2
@@ -747,6 +747,9 @@ input[type='checkbox'] {
 	margin-right: auto;
 	margin-left: auto;
 }
+.header td {
+	text-align:left;
+}
 
 .header .swiper-slide.second .p-large {
 	margin-bottom: 1.5rem;
@@ -865,7 +868,7 @@ input[type='checkbox'] {
 
 
 /****************************/
-/*     07. Loan Options     */
+/*     07. Loan why-us     */
 /****************************/
 .cards-1 {
 	padding-top: 5rem;
@@ -1909,7 +1912,7 @@ a:hover.back-to-top {
 @media  (max-width:766.98px) {
 	.header{
 		padding-top: 5rem;
-		padding-bottom: 15rem;
+		padding-bottom: 10rem;
 	}
 .header .swiper-slide.second {
     padding-top: 0rem;
