@@ -379,7 +379,7 @@ a:hover {
 	/* height: 100%; */
 	/* padding-top: 9rem; */
 	padding-bottom: 9rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../images/homr-bg.png') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../images/homr-bg.webp') center center no-repeat;
 	background-size: cover;	
 	text-align: center;
 }
@@ -403,7 +403,7 @@ a:hover {
 .accordion {
 	/* padding-top: 5rem; */
 	padding-bottom: 3rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../images/app-bg.png') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../images/app-bg.webp') center center no-repeat;
 	background-size: cover; 
 }
 
@@ -513,7 +513,7 @@ a:hover {
 	padding-top: 6rem;
 	padding-bottom: 7rem;
 	margin-bottom: -1px;
-	background: url('../images/curved-hills-top-background.jpg') center bottom no-repeat;
+	background: url('../images/curved-hills-top-background.webp') center bottom no-repeat;
 	background-size: cover;
 }
 
@@ -562,7 +562,7 @@ table td {
 .basic-1 {
 	padding-top: 9rem;
 	padding-bottom: 5.5rem;
-	background: url('../images/curved-hills-bottom-background.jpg') center top no-repeat;
+	background: url('../images/curved-hills-bottom-background.webp') center top no-repeat;
 	background-size: cover;
 }
 
@@ -732,7 +732,7 @@ a.back-to-top {
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: 1.875rem;
-	background: #e23963 url("../images/up-arrow.png") no-repeat center 47%;
+	background: #e23963 url("../images/up-arrow.webp") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
 }
