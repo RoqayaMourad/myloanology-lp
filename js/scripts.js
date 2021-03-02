@@ -61,6 +61,58 @@
 
 
 
+
+
+	/* Card Slider - Swiper */
+ var cardSlider = new Swiper('.card-slider', {
+	autoplay: {
+		delay: 4000,
+	},
+     loop: false,
+      pagination: {
+	 		el: '.swiper-pagination',
+	 		type: 'bullets',
+	 		clickable: true,
+	 	},
+	 	slidesPerView: 3,
+	 	spaceBetween: 0,
+      breakpoints: {
+          992: {
+              slidesPerView: 1
+          }
+      }
+ });
+
+
+
+
+
+    /* Move Form Fields Label When User Types */
+    // for input and textarea fields
+    $("input, textarea").keyup(function(){
+		if ($(this).val() != '') {
+			$(this).addClass('notEmpty');
+		} else {
+			$(this).removeClass('notEmpty');
+		}
+    });
+    
+
+	/* Get Quote Form */
+    $("#GetQuoteForm").validator().on("submit", function(event) {
+    	if (event.isDefaultPrevented()) {
+            // handle the invalid form...
+            gformError();
+            gsubmitMSG(false, "Please fill all fields!");
+        } else {
+            // everything looks good!
+            event.preventDefault();
+            gsubmitForm();
+        }
+    });
+})(jQuery);
+
+
     /* Header Slider - Swiper */
 	// var headerSlider = new Swiper('.header-slider', {
     //     autoplay: {
@@ -89,26 +141,6 @@
 	// 	}
     // });
 
-
-	/* Card Slider - Swiper */
- var cardSlider = new Swiper('.card-slider', {
-	autoplay: {
-		delay: 4000,
-	},
-     loop: false,
-      pagination: {
-	 		el: '.swiper-pagination',
-	 		type: 'bullets',
-	 		clickable: true,
-	 	},
-	 	slidesPerView: 3,
-	 	spaceBetween: 0,
-      breakpoints: {
-          992: {
-              slidesPerView: 1
-          }
-      }
- });
 
 
     /* Lightbox - Magnific Popup */
@@ -141,31 +173,6 @@
 	// 		enabled:true //enable gallery mode
 	// 	}
 	// });
-
-
-    /* Move Form Fields Label When User Types */
-    // for input and textarea fields
-    $("input, textarea").keyup(function(){
-		if ($(this).val() != '') {
-			$(this).addClass('notEmpty');
-		} else {
-			$(this).removeClass('notEmpty');
-		}
-    });
-    
-
-	/* Get Quote Form */
-    $("#GetQuoteForm").validator().on("submit", function(event) {
-    	if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            gformError();
-            gsubmitMSG(false, "Please fill all fields!");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            gsubmitForm();
-        }
-    });
 
     // function gsubmitForm() {
     //     // initiate variables with form content
@@ -328,4 +335,3 @@
     
 
     
-})(jQuery);
