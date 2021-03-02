@@ -734,7 +734,7 @@ input[type='checkbox'] {
 
 .header{
 	/* height: 100%; */
-	padding-top: 9rem;
+	/* padding-top: 9rem; */
 	padding-bottom: 9rem;
 	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../images/homr-bg.png') center center no-repeat;
 	background-size: cover;	
@@ -822,7 +822,7 @@ input[type='checkbox'] {
 	margin-bottom: 2rem;
 }
 
-.accordion a[aria-expanded="true"] .circle-numbering {
+.accordion a[aria-expanded="true"] .circle-numbering , .pills .circle-numbering{
 	display: inline-block;
 	width: 2.5rem;
 	height: 2.5rem;
@@ -1107,18 +1107,18 @@ input[type='checkbox'] {
 	margin-bottom: 1.5rem;
 }
 
-.slider-1 .icon-cell {
+.icon-cell {
 	vertical-align: top;
 }
 
-.slider-1 .icon-cell .fas {
+.icon-cell .fas {
 	margin-right: 0.5rem;
 	color: #97be5d;
 	font-size: 1.25rem;
 	vertical-align: -8%;
 }
 
-.slider-1 table td {
+table td {
 	padding-bottom: 0.5rem;
 }
 
@@ -1182,6 +1182,7 @@ input[type='checkbox'] {
 	margin-top: 0.25rem;
 	margin-right: 1rem;
 	font-size: 2.625rem;
+	color: #fff;
 }
 
 .pills table td {
@@ -1217,7 +1218,9 @@ input[type='checkbox'] {
 	line-height: 0;
 }
 
-
+.pad-top {
+	padding-top: 4rem;
+}
 /*********************/
 /*     13. About     */
 /*********************/
@@ -1557,12 +1560,7 @@ a:hover.back-to-top {
 	/* end of navigation */
 
 
-	/* Header */
-	.header .swiper-slide.first {
-		padding-top: 11rem;
-		padding-bottom: 11rem;
-		text-align: left;
-	}
+
 
 	.header .swiper-slide.first .image-container {
 		max-width: 100%;
@@ -1570,7 +1568,7 @@ a:hover.back-to-top {
 	}
 
 	.header .swiper-slide.second {
-		padding-top: 11rem;
+		padding-top: 0rem;
 		padding-bottom: 11rem;
 		text-align: left;
 	}
@@ -1694,7 +1692,7 @@ a:hover.back-to-top {
 		margin-left: 2rem;
 	}
 	
-	.header .swiper-slide.second {
+	.header{
 		padding-top: 0rem;
 		 padding-bottom: 1rem;
 	}
@@ -1801,7 +1799,7 @@ a:hover.back-to-top {
 		margin-right: 1rem;
 	}
 
-	.header .swiper-slide.second .text-container {
+	.header .text-container {
 		margin-top: 0.5rem;
 		width: 92%;
 		margin-left: 1rem;
@@ -1832,7 +1830,7 @@ a:hover.back-to-top {
 
 	/* Description 1 */
 	.slider-1 {
-		padding-bottom: 11rem;
+		padding-bottom: 8rem;
 	}
 
 	.slider-1 h3 {
@@ -1899,3 +1897,21 @@ a:hover.back-to-top {
 	/* end of terms & conditions and privacy policy */
 }
 /* end of min-width width 1200px */
+
+@media  (max-width:992px) {
+
+.header .swiper-slide.second {
+    padding-top: 7rem;
+
+
+}
+
+@media  (max-width:766.98px) {
+	.header{
+		padding-top: 5rem;
+		padding-bottom: 15rem;
+	}
+.header .swiper-slide.second {
+    padding-top: 0rem;
+}
+}

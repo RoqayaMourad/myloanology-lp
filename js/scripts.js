@@ -50,19 +50,19 @@
 
 
     /* Header Slider - Swiper */
-	var headerSlider = new Swiper('.header-slider', {
-        autoplay: {
-            delay: 4000,
-            disableOnInteraction: false,
-		},
-        loop: false,
-        pagination: {
-			el: '.swiper-pagination',
-			type: 'bullets',
-			clickable: true,
-		},
-		autoHeight: true,
-	});
+	// var headerSlider = new Swiper('.header-slider', {
+    //     autoplay: {
+    //         delay: 4000,
+    //         disableOnInteraction: false,
+	// 	},
+    //     loop: false,
+    //     pagination: {
+	// 		el: '.swiper-pagination',
+	// 		type: 'bullets',
+	// 		clickable: true,
+	// 	},
+	// 	autoHeight: true,
+	// });
 
 
     /* Image Slider - Swiper */
